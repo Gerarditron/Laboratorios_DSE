@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Data.Entity;
+using System.ComponentModel.DataAnnotations;
 
 namespace MvcPelicula.Models
 {
@@ -7,6 +8,7 @@ namespace MvcPelicula.Models
     {
         public int ID { get; set; }
         public string Titulo { get; set; }
+        [Display(Name ="Fecha ")]
         public DateTime FechaLanzamiento { get; set; }
         public string Gener { get; set; }
         public decimal Precio { get; set; }
